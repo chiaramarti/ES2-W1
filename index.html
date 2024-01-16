@@ -4,11 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercise 2</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .logo {
+        width: 150px;
+        display: inline;
+      }
+      h1 {
+        font-family: "Franklin Gothic Medium";
+        font-size: 24pt;
+        text-transform: uppercase;
+      }
+    </style>
   </head>
   <body>
+    <!-- HEADER + NAVBAR -->
     <header>
       <div class="logo">
-        <img src="./assets/img/logo.svg" alt="epicode logo" />
+        <img class="logo" src="./assets/img/logo.svg" alt="epicode logo" />
         <h1>Epicode - Il blog dei developers</h1>
       </div>
       <nav>
@@ -17,14 +32,17 @@
         <a href="#">LAvora con noi</a>
       </nav>
     </header>
+    <!-- MAIN -->
     <main>
+      <!-- TITLE -->
       <h2 class="post-title">Come creare un template per i post</h2>
-      <p class="author">di Mario rossi - pbblicatoil 25-10-2020</p>
+      <p class="author">di Mario rossi - pubblicatoil 25-10-2020</p>
 
+      <!-- ARTICLE -->
       <div class="article">
         La prima cosa da fare è suddividere in <strong>blocchi logici</strong> la pagina, identificando le parti comuni
         da applicare a tutte le pagine.
-
+        <!-- UNORDERED LIST -->
         <ul>
           Le varie aree saranno quindi suddivise in:
           <li>Contenuti di intestazione del tag <strong>&lt;header&gt;</strong></li>
@@ -33,7 +51,7 @@
         </ul>
 
         Formattazione del codice
-
+        <!-- ORDERED LIST -->
         <ol>
           Il testo dell'articolo dovrà essere formattato per identificare tutte le parti da selezionare con i CSS.
           Perciò i passi saranno:
@@ -43,7 +61,7 @@
         </ol>
 
         L'applicazione di stili CSS è cresciuta negli anni fino a raggiungere la diffusione pressochè totale.
-
+        <!-- TABLE -->
         <table>
           <caption>
             Diffusione del CSS
@@ -52,7 +70,7 @@
             <tr>
               <th>Anno</th>
               <th>% di utilizzo</th>
-              <th>Supposto browsers</th>
+              <th>Supporto browsers</th>
             </tr>
           </thead>
           <tbody>
@@ -100,20 +118,17 @@
           >
           </iframe>
         </p>
-
-        AREA CORRELATI Articoli correlati Validare il codice HTML Categoria: develop Data: 18-9-2020 Correggere la
-        sintassi Categoria: develop Data: 16-9-2020
       </div>
 
       <fieldset class="newsletter-sub">
-        <legend>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra nesletter:</legend>
+        <legend>Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla nostra newsletter:</legend>
         <label for="email">inserisci l'email </label>
         <input type="email" name="email" id="email" required placeholder="your@email.com" />
         <label for="button">Iscriviti!</label>
         <button>Invia</button>
       </fieldset>
-
-      <div>
+      <!-- ARTICOLI CORRELATI -->
+      <div class="related-articles">
         <a href="">Articoli correlati</a>
         <a href="">
           <h2>Validare il codice HTML</h2>
@@ -125,5 +140,10 @@
         </a>
       </div>
     </main>
+    <!-- FOOTER -->
+    <footer>
+      Blog Epicode &#169; 2023 Testata online di Mario Rossi, registrata con prot. n.213/2018 - via Luigi Einaudi 2 -
+      Milano. P.IVA 00112233. infoepicode.school <a href="mailto:INFOEPICODE@EMAIL.COM">CONTATTACI VIA EMAIL</a>
+    </footer>
   </body>
 </html>
