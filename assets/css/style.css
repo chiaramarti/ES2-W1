@@ -162,6 +162,11 @@ td{
     border-bottom: var(--indigo) solid 2px;
 }
 
+.link{
+   color: var(--turchese);
+   font-weight: 600;
+}
+
 /* articoli correlati */
 .related-articles a {
     text-decoration: none;
