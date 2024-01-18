@@ -1,0 +1,85 @@
+/*PREPARATORI*/
+:root{
+    /* FONT */
+    --text: 'Poppins', sans-serif;
+    /* PALETTE */
+    --turchese:rgb(0,160,198,1);
+    --turchese-dark:rgb(45, 106, 132,1);
+    --indigo:rgb(59, 96, 191);
+    --link-color:rgb(82, 166, 200);
+    --magenta:rgb(160, 46, 111);
+    --grey:rgb(219, 219, 219);
+    --fucsia:rgb(178, 54, 217);
+    --green:rgb(34, 82, 100);
+    --green-dark:rgb(45, 59, 60);
+}
+
+.white{
+    color: white;
+}
+
+/*BODY*/
+
+body {
+    font-family: var(--text);
+    background-image: url(../img/sfondo.png);
+    background-position: center;
+    background-repeat: repeat-y;
+    width: 100vw;
+}
+
+/* HEADER + NAV */
+header{
+    text-align: center;
+    width: 90vw;
+    margin: 10px auto;
+    background: linear-gradient(180deg,var(--turchese) 0%, var(--turchese-dark)70%);
+    padding: 30px 0px;
+    box-shadow: ;
+}
+
+nav a, h1{
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    margin: 12px auto;
+    font-weight: 600;
+    font-size: 14pt;
+}
+
+h1{
+    margin: 30px 0px;
+}
+
+nav a:hover{
+    color: rgb(132, 239, 255);
+    font-size: 15pt;
+}
+
+nav a i{
+    margin: 0px 5px;
+}
+
+.logo {
+    width: 60%;
+    margin: auto;
+}
+
+/* articoli correlati */
+.related-articles a {
+    text-decoration: none;
+    color: black;
+}
+
+table {
+    width: 100vw;
+    text-align: center;
+}
+
+table td {
+    text-align: center;
+}
+  
+footer {
+  }
